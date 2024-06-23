@@ -1,0 +1,154 @@
+{
+	"id": "4d246eaf-5b0c-4454-b243-ea6b20cb85db",
+	"name": "New Collection ДЗ простое",
+	"timestamp": "2024-06-23T13:45:53.714Z",
+	"collection_id": "35353373-4fbc5f2b-c403-4644-a158-8e5215f4baf6",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-06-23T13:45:51.257Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "a817323b-e0a2-4c8b-9d7b-13a2a16290f3",
+			"name": "Authorization",
+			"url": "https://radio-shop.megaplan.by/api/v3/auth/access_token",
+			"time": 165,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				165
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "5f5fc6e5-72a9-4e65-a5e4-49968d3a0564",
+			"name": "New product",
+			"url": "https://radio-shop.megaplan.by/api/v3/offer",
+			"time": 402,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				402
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "9bc57950-5481-4c8a-bec0-b3bd857b0500",
+			"name": "Change the product",
+			"url": "https://radio-shop.megaplan.by/api/v3/offer/3819",
+			"time": 438,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				438
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "37fd4435-7b63-4c9f-b704-f37509d0ffcd",
+			"name": "Get the  product",
+			"url": "https://radio-shop.megaplan.by/api/v3/offer/3819",
+			"time": 271,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				271
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "bca42bc7-ad62-40ce-92e0-4a0c06656568",
+			"name": "Delete the  product",
+			"url": "https://radio-shop.megaplan.by/api/v3/offer/3819",
+			"time": 215,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				215
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "cdb54e56-7cb4-4e3d-b10a-f122e6c1bc93",
+			"name": "Check the product after delete",
+			"url": "https://radio-shop.megaplan.by/api/v3/offer/3819",
+			"time": 180,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				180
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1671,
+	"collection": {
+		"requests": [
+			{
+				"id": "a817323b-e0a2-4c8b-9d7b-13a2a16290f3",
+				"method": "POST"
+			},
+			{
+				"id": "5f5fc6e5-72a9-4e65-a5e4-49968d3a0564",
+				"method": "POST"
+			},
+			{
+				"id": "9bc57950-5481-4c8a-bec0-b3bd857b0500",
+				"method": "POST"
+			},
+			{
+				"id": "37fd4435-7b63-4c9f-b704-f37509d0ffcd",
+				"method": "GET"
+			},
+			{
+				"id": "bca42bc7-ad62-40ce-92e0-4a0c06656568",
+				"method": "DELETE"
+			},
+			{
+				"id": "cdb54e56-7cb4-4e3d-b10a-f122e6c1bc93",
+				"method": "GET"
+			}
+		]
+	}
+}
